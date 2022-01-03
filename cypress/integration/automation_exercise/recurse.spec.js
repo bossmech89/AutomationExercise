@@ -33,7 +33,7 @@ describe("Explore the recurse function", () => {
           (x) => {
             expect(x).to.be.a('string')
             expect(x).to.equal('Test');
-            cy.log('Testing1');
+            cy.log('Testing2');
           },
         )
       })
