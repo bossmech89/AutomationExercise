@@ -13,7 +13,7 @@ describe("Explore the recurse function", () => {
         ).should('equal', 7)
     });
 
-    it('works', () => {
+    it('using recurse function to works', () => {
         recurse(getTo(4), (x) => {
             expect(x).to.equal(4)
         }).should('equal', 4)
@@ -29,10 +29,11 @@ describe("Explore the recurse function", () => {
 
     it('works with multiple assertions', () => {
         recurse(
-          () => cy.wrap('hello'),
+          () => cy.wrap('hello world'),
           (x) => {
             expect(x).to.be.a('string')
-            expect(x).to.equal('Test')
+            expect(x).to.equal('Test');
+            cy.log('Test');
           },
         )
       })
