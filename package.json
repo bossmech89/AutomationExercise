@@ -1,0 +1,19 @@
+{
+  "name": "automation_exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^9.2.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "cypress-recurse": "^1.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testCases": "--spec cypress/integration/automation_exercise/**/*"
+  },
+  "author": "",
+  "license": "ISC"
+}
